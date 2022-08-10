@@ -1,29 +1,61 @@
 #include <stdio.h>
 
-int length;
-int array[10];
-int number;
+int userNumber;
 int constant;
 int sorted = 1;
+int userInput;
+int userInputTracking = 1;
+int arrayIndex;
+int count;
 
 int main(){
 
-    printf("Input your value: ");
-    scanf("%d", &number);
 
-    while( number > 0){
+    printf("How many values do you want to sort: ");
+    scanf("%d", &userInput);
 
-        length++;
-        array[length-1] = number;
+    int array[userInput];
 
-        printf("Input your value: ");
-        scanf("%d", &number);
+    printf("\nInput value number %d: ", userInputTracking);
+    scanf("%d", &userNumber);
+
+    array[0] = userNumber;
+
+
+    while(( userNumber > 0) && (userInputTracking <  userInput)){
+
+
+        arrayIndex++;
+        userInputTracking++;
+        count++;
+
+        if (userInputTracking == userInput){
+
+            printf("\nInput your last value: ");
+            scanf("%d", &userNumber);
+
+            array[arrayIndex] = userNumber;
+
+
+        }
+
+        else{
+
+            printf("\nInput value number %d: ", userInputTracking);
+            scanf("%d", &userNumber);
+
+            array[arrayIndex] = userNumber;
+
+            
+        }
+        
 
     }
 
-    for( int i = 0; i < length; i++){
+   
+    for( int i = 0; i < count; i++){
 
-        for( int j = 0; j <= length; j++ ){
+        for( int j = 0; j < count; j++ ){
 
            if (array[j] > array[j+1]){
 
@@ -39,7 +71,8 @@ int main(){
 
     printf("\nYour sorted array are: \n\n");
 
-    while(sorted <= length){
+
+    while(sorted <= count){
 
         printf("%d\n", array[sorted]);
         sorted+=1;
