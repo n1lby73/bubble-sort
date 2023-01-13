@@ -13,7 +13,12 @@ int main() {
     // char input[100];
     printf("Enter a string: ");
     scanf("%d", &input);
-    for (int i = 0; i != '\0'; i++){
+
+    char str[20];
+    sprintf(str, "%d", input);
+    int length = strlen(str);
+
+    for (int i = 0; i <= length; i++){
 
         if input(i) == '\0';
         printf("new line detected");
