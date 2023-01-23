@@ -1,2 +1,2 @@
 # bubble-sort
-bubble sort using c
+Writing the bubble sort algrothim. Using c
