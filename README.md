@@ -2,4 +2,4 @@
 Writing the bubble sort algrothim. Using c
 
 # Target:
-Make the p
+Make the pr
