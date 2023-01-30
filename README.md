@@ -2,4 +2,4 @@
 Writing the bubble sort algrothim. Using c
 
 # Target:
-Make the pro
+Make the prog
