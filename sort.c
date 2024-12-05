@@ -141,7 +141,7 @@ int main(){
         if (scanf("%d", &restart) != 1){
 
             printf("\nKindly input an integer");
-            break;
+            return 0;
 
         }
 
@@ -169,7 +169,7 @@ int main(){
 
             printf("\nKindly input an integer");
 
-            break;
+            return 0;
 
         }
 
@@ -181,12 +181,9 @@ int main(){
 
                 printf("\nKindly input an integer");
 
-                break;
+                return 0;
 
             }
-
-            return 0;
-
         }
 
         int array[userInput];
@@ -197,7 +194,7 @@ int main(){
 
             printf("\nKindly input an integer");
 
-            break;
+            return 0;
 
         }
 
@@ -217,7 +214,7 @@ int main(){
 
                     printf("\nKindly input an integer");
 
-                    break;
+                    return 0;
 
                 }
 
@@ -234,7 +231,7 @@ int main(){
 
                     printf("\nKindly input an integer");
 
-                    break;
+                    return 0;
 
                 }
 
@@ -294,14 +291,15 @@ int main(){
             if (scanf("%d", &restart) != 1){
 
                 printf("\nKindly input an integer");
-                break;
+                
+                return 0;
 
             }
 
             if(invalid == 3){
 
                 printf("\nNumber of trials excedded\n");
-                break;
+                return 0;
             }
 
             invalid++;
