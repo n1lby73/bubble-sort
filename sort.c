@@ -179,11 +179,13 @@ int main(){
 
             if (scanf("%d", &userInput) != 1){
 
-            printf("\nKindly input an integer");
+                printf("\nKindly input an integer");
 
-            break;
+                break;
 
-        }
+            }
+
+            return 0;
 
         }
 
