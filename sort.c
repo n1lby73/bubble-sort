@@ -173,7 +173,7 @@ int main(){
 
         }
 
-        while(userInput <= 0){
+        while(userInput <= 1){
 
             printf("Input a number greater than zero to continue: ");
 
