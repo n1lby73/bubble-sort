@@ -15,19 +15,39 @@ int main(){
 
 
     printf("How many values do you want to sort: ");
-    scanf("%d", &userInput);
+
+    if (scanf("%d", &userInput) != 1){
+
+        printf("\nKindly input an integer");
+
+        return 0;
+    }
 
     while(userInput <= 0){
 
         printf("Input a number greater than zero to continue: ");
-        scanf("%d", &userInput);
+
+        if (scanf("%d", &userInput) != 1){
+
+            printf("\nKindly input an integer");
+
+            return 0;
+
+        }
 
     }
 
     int array[userInput];
 
     printf("\nInput value number %d: ", userInputTracking);
-    scanf("%d", &userNumber);
+
+    if (scanf("%d", &userNumber) != 1){
+
+        printf("\nKindly input an integer");
+
+        return 0;
+
+    }
 
     array[0] = userNumber;
 
@@ -40,7 +60,14 @@ int main(){
         if (userInputTracking == userInput){
 
             printf("\nInput your last value: ");
-            scanf("%d", &userNumber);
+
+            if (scanf("%d", &userNumber) != 1){
+
+                printf("\nKindly input an integer");
+
+                return 0;
+
+            }
 
             array[arrayIndex] = userNumber;
 
@@ -49,7 +76,14 @@ int main(){
         else{
 
             printf("\nInput value number %d: ", userInputTracking);
-            scanf("%d", &userNumber);
+            
+            if (scanf("%d", &userNumber) != 1){
+
+                printf("\nKindly input an integer");
+
+                return 0;
+
+            }
 
             array[arrayIndex] = userNumber;
     
@@ -91,12 +125,25 @@ int main(){
     printf("\n\nDo you want to restart the program\n1 ==> yes\n0 ==> no");
 
     printf("\n\nPlease choose: ");
-    scanf("%d", &restart);
+
+    if (scanf("%d", &restart)!= 1){
+
+        printf("\nKindly input 0 or 1");
+
+        return 0;
+
+    }
 
     while((restart != 0) && (restart != 1)){
 
         printf("\nInvalid input\n\nYou have %d trial left: ", trial-invalid);
-        scanf("%d", &restart);
+
+        if (scanf("%d", &restart) != 1){
+
+            printf("\nKindly input an integer");
+            break;
+
+        }
 
         if(invalid == 3){
 
@@ -117,19 +164,40 @@ int main(){
         int arrayIndex;
 
         printf("\nHow many values do you want to sort: ");
-        scanf("%d", &userInput);
+
+        if (scanf("%d", &userInput) != 1){
+
+            printf("\nKindly input an integer");
+
+            break;
+
+        }
 
         while(userInput <= 0){
 
             printf("Input a number greater than zero to continue: ");
-            scanf("%d", &userInput);
+
+            if (scanf("%d", &userInput) != 1){
+
+            printf("\nKindly input an integer");
+
+            break;
+
+        }
 
         }
 
         int array[userInput];
 
         printf("\nInput value number %d: ", userInputTracking);
-        scanf("%d", &userNumber);
+
+        if (scanf("%d", &userNumber) != 1){
+
+            printf("\nKindly input an integer");
+
+            break;
+
+        }
 
         array[0] = userNumber;
         int count = 0;
@@ -142,7 +210,14 @@ int main(){
             if (userInputTracking == userInput){
 
                 printf("\nInput your last value: ");
-                scanf("%d", &userNumber);
+
+                if (scanf("%d", &userNumber) != 1){
+
+                    printf("\nKindly input an integer");
+
+                    break;
+
+                }
 
                 array[arrayIndex] = userNumber;
                 printf("array index ==> %d", arrayIndex);
@@ -152,7 +227,14 @@ int main(){
             else{
 
                 printf("\nInput value number %d: ", userInputTracking);
-                scanf("%d", &userNumber);
+
+                if (scanf("%d", &userNumber) != 1){
+
+                    printf("\nKindly input an integer");
+
+                    break;
+
+                }
 
                 array[arrayIndex] = userNumber;
 
@@ -196,12 +278,23 @@ int main(){
         printf("\n\nDo you want to restart the program\n1 ==> yes\n0 ==> no");
 
         printf("\n\nPlease choose: ");
-        scanf("%d", &restart);
+        
+        if (scanf("%d", &restart)!= 1){
+
+            printf("\nKindly input 0 or 1");
+
+        }
 
         while((restart != 0) && (restart != 1)){
 
             printf("\nInvalid input\n\nYou have %d trial left: ", trial-invalid);
-            scanf("%d", &restart);
+
+            if (scanf("%d", &restart) != 1){
+
+                printf("\nKindly input an integer");
+                break;
+
+            }
 
             if(invalid == 3){
 
